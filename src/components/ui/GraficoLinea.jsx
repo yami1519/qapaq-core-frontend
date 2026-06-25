@@ -1,4 +1,4 @@
-import {
+﻿import {
   LineChart,
   Line,
   XAxis,
@@ -45,3 +45,4 @@ export default function GraficoLinea({
     </ResponsiveContainer>
   )
 }
+

@@ -1,4 +1,4 @@
-import { Navigate, useLocation } from 'react-router-dom'
+﻿import { Navigate, useLocation } from 'react-router-dom'
 import { useAuthContext } from '../../context/AuthContext.jsx'
 
 /**
@@ -23,3 +23,4 @@ export default function PrivateRoute({ children, roles }) {
 
   return children
 }
+

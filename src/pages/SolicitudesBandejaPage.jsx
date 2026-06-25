@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+﻿import { useState, useEffect } from 'react'
 import { useNavigate, useSearchParams } from 'react-router-dom'
 import {
   Plus, RefreshCw, Search, History, FileText,
@@ -262,3 +262,4 @@ export default function SolicitudesBandejaPage() {
     </div>
   )
 }
+

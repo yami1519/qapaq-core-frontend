@@ -1,4 +1,4 @@
-import {
+﻿import {
   PieChart,
   Pie,
   Cell,
@@ -41,3 +41,4 @@ export default function GraficoTorta({ data = [] }) {
     </ResponsiveContainer>
   )
 }
+

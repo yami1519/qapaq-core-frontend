@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { useProductos } from '../../hooks/useProductos.js'
 
 const VACIO = {
@@ -127,3 +127,4 @@ export default function SolicitudForm({ onSubmit, loading, codasesorDefault }) {
     </form>
   )
 }
+

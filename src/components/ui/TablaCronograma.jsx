@@ -1,4 +1,4 @@
-import { money } from '../../utils/format.js'
+﻿import { money } from '../../utils/format.js'
 
 /**
  * Plan de pagos (cuotas) de un crédito — endpoint /creditos/{cod}/cronograma.
@@ -38,3 +38,4 @@ export default function TablaCronograma({ cronograma = [] }) {
     </table>
   )
 }
+

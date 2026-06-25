@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Contratos del dashboard (campos reales del backend).
  *
  * @typedef {Object} KpisOut  GET /dashboard/kpis
@@ -33,3 +33,4 @@
  * @property {number} ratiomora_real
  */
 export {}
+

@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom'
+﻿import { useNavigate } from 'react-router-dom'
 import { money, num } from '../../utils/format.js'
 import Semaforo from './Semaforo.jsx'
 
@@ -56,3 +56,4 @@ export default function TablaCartera({ cartera = [] }) {
     </table>
   )
 }
+

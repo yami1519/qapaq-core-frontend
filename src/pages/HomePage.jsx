@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { ShieldCheck, User, Lock, LogIn } from 'lucide-react'
 import Logo from '../components/ui/Logo.jsx'
 import Carrusel from '../components/ui/Carrusel.jsx'
@@ -350,3 +350,4 @@ export default function HomePage() {
     </div>
   )
 }
+

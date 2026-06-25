@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+﻿import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { getCliente } from '../services/svc_clientes.js'
 import Loader from '../components/ui/Loader.jsx'
@@ -85,3 +85,4 @@ export default function ClientePage() {
     </div>
   )
 }
+

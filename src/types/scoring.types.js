@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Contratos del motor de scoring. Espejo de sch_scoring.py.
  *
  * @typedef {Object} ScoringIn
@@ -27,3 +27,4 @@
  * @property {DetalleScore} detalle_score
  */
 export {}
+

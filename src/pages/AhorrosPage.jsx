@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { useResumenAhorros } from '../hooks/useAhorros.js'
 import { useAuth } from '../hooks/useAuth.js'
 import GraficoTorta from '../components/ui/GraficoTorta.jsx'
@@ -100,3 +100,4 @@ export default function AhorrosPage() {
     </div>
   )
 }
+

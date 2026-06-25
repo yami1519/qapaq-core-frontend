@@ -1,4 +1,4 @@
-import api from './svc_api.js'
+﻿import api from './svc_api.js'
 
 /**
  * Servicio del módulo de Recuperaciones / Mora. Todas las rutas requieren JWT,
@@ -72,3 +72,4 @@ export async function castigarCredito(cod, forzar = false) {
   const { data } = await api.post(`/recuperaciones/creditos/${cod}/castigar`, { forzar })
   return data
 }
+

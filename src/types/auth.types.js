@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Contratos del módulo de autenticación. Espejo de sch_auth.py.
  *
  * @typedef {Object} LoginIn
@@ -16,3 +16,4 @@
  * @property {string} [codasesor]   Código de asesor (p. ej. AS0031).
  */
 export {}
+

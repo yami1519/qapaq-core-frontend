@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 
 /**
  * Formulario de login. En desarrollo, password = numerodni.
@@ -51,3 +51,4 @@ export default function LoginForm({ onSubmit, loading, error }) {
     </form>
   )
 }
+

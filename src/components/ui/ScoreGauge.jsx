@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Medidor circular 0–100 del scoring crediticio.
  * Color según los umbrales de decisión del backend:
  *  ≥70 APROBADO (verde) · 50–69 OBSERVADO (ámbar) · <50 RECHAZADO (rojo)
@@ -54,3 +54,4 @@ export default function ScoreGauge({ score = 0 }) {
     </div>
   )
 }
+

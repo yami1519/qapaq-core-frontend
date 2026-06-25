@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import { useSolicitud } from '../hooks/useSolicitudes.js'
 import { useAuth } from '../hooks/useAuth.js'
@@ -329,3 +329,4 @@ function CronogramaSolicitud({ cuotas = [] }) {
   }))
   return <TablaCronograma cronograma={filas} />
 }
+

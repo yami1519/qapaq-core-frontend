@@ -1,4 +1,4 @@
-import api from './svc_api.js'
+﻿import api from './svc_api.js'
 
 /**
  * GET /dashboard/kpis?periodomes=
@@ -41,3 +41,4 @@ export async function getDesembolsos(periodomes) {
   const { data } = await api.get('/dashboard/desembolsos', { params: { periodomes } })
   return data
 }
+

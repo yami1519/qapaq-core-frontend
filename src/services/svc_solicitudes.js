@@ -1,4 +1,4 @@
-import api from './svc_api.js'
+﻿import api from './svc_api.js'
 
 /**
  * Servicio del flujo de solicitudes de crédito (todas las rutas bajo /creditos
@@ -126,3 +126,4 @@ export async function desembolsarSolicitud(cod) {
   const { data } = await api.post(`/creditos/solicitudes/${cod}/desembolsar`)
   return data
 }
+

@@ -1,4 +1,4 @@
-import api from './svc_api.js'
+﻿import api from './svc_api.js'
 
 /**
  * GET /creditos/cartera?pkasesor=&periodomes=
@@ -38,3 +38,4 @@ export async function getProductos() {
   const { data } = await api.get('/creditos/productos')
   return data
 }
+

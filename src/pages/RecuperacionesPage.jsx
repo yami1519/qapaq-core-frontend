@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { X, RefreshCw, AlertTriangle, Gavel, Ban, History } from 'lucide-react'
 import { useAuth } from '../hooks/useAuth.js'
 import {
@@ -402,3 +402,4 @@ function GestionModal({ cod, puedeGestionar, onClose }) {
     </div>
   )
 }
+

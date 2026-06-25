@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react'
+﻿import { useState, useMemo } from 'react'
 import { useCartera } from '../hooks/useCreditos.js'
 import { useAuth } from '../hooks/useAuth.js'
 import KpiCard from '../components/ui/KpiCard.jsx'
@@ -218,3 +218,4 @@ export default function MiCarteraDashboard() {
     </div>
   )
 }
+

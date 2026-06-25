@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Tarjeta de indicador. valor + label + color de borde opcional.
  */
 export default function KpiCard({ label, valor, color, sufijo = '' }) {
@@ -12,3 +12,4 @@ export default function KpiCard({ label, valor, color, sufijo = '' }) {
     </div>
   )
 }
+

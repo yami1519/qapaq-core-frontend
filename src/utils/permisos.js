@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Matriz de permisos del flujo de otorgamiento (espejo de cfg_roles.py §7).
  * El backend la valida vía requiere_rol/puede; aquí la replicamos solo para
  * habilitar/ocultar acciones en la UI. La fuente de verdad sigue siendo el backend.
@@ -74,3 +74,4 @@ export const BANDA_INFO = Object.fromEntries(BANDAS.map((b) => [b.cod, b]))
 // Umbrales de días de atraso para las transiciones de estado (espejo del backend).
 export const UMBRAL_JUDICIAL = 121 // derivar a cobranza judicial: >= 121 días
 export const UMBRAL_CASTIGO = 180 // castigo contable: > 180 días
+

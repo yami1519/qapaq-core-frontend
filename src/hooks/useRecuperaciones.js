@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react'
+﻿import { useState, useEffect, useCallback } from 'react'
 import {
   getResumenMora,
   getCarteraMora,
@@ -135,3 +135,4 @@ export function useGestiones(cod) {
 
   return { gestiones, loading, error, recargar: cargar, registrar, accionLoading, accionMsg }
 }
+

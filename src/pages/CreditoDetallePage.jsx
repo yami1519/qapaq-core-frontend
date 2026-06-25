@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from 'react-router-dom'
+﻿import { useParams, useNavigate } from 'react-router-dom'
 import { useCreditoDetalle } from '../hooks/useCreditos.js'
 import TablaCronograma from '../components/ui/TablaCronograma.jsx'
 import Loader from '../components/ui/Loader.jsx'
@@ -81,3 +81,4 @@ export default function CreditoDetallePage() {
     </div>
   )
 }
+

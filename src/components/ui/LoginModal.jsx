@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+﻿import { useEffect } from 'react'
 import { X } from 'lucide-react'
 import { useAuth } from '../../hooks/useAuth.js'
 import LoginForm from '../forms/LoginForm.jsx'
@@ -40,3 +40,4 @@ export default function LoginModal({ onClose }) {
     </div>
   )
 }
+

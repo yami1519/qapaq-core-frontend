@@ -1,4 +1,4 @@
-import {
+﻿import {
   BarChart,
   Bar,
   XAxis,
@@ -32,3 +32,4 @@ export default function GraficoBarras({ data = [], xKey = 'periodomes', barras =
     </ResponsiveContainer>
   )
 }
+

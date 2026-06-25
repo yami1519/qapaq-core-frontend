@@ -1,4 +1,4 @@
-import Semaforo from './Semaforo.jsx'
+﻿import Semaforo from './Semaforo.jsx'
 import { money } from '../../utils/format.js'
 
 // Etiquetas y formato de cada ratio del servicio RDS.
@@ -68,3 +68,4 @@ export default function RdsPanel({ rds }) {
     </div>
   )
 }
+

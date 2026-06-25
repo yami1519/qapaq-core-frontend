@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Contratos del flujo de solicitudes de crédito (MPR-003-CRE).
  * Espejo de sch_creditos.py + respuestas de ctl_creditos.
  *
@@ -73,3 +73,4 @@
  * @property {string} fechasolicitudcredito
  */
 export {}
+

@@ -1,4 +1,4 @@
-/** Formatea un número como moneda en soles (PEN). */
+﻿/** Formatea un número como moneda en soles (PEN). */
 export function money(v) {
   const n = Number(v)
   if (Number.isNaN(n)) return '—'
@@ -31,3 +31,4 @@ export function fecha(v) {
   if (!m) return String(v)
   return `${m[3]}/${m[2]}/${m[1]}`
 }
+

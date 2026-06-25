@@ -1,4 +1,4 @@
-import api from './svc_api.js'
+﻿import api from './svc_api.js'
 
 /**
  * GET /ahorros/resumen-agencia/{codagencia}?periodomes=
@@ -32,3 +32,4 @@ export async function getCuentaDetalle(codcuentaahorro, periodomes) {
   })
   return data
 }
+

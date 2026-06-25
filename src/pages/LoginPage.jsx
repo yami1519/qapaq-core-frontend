@@ -1,4 +1,4 @@
-import { Navigate } from 'react-router-dom'
+﻿import { Navigate } from 'react-router-dom'
 import { useAuth } from '../hooks/useAuth.js'
 import LoginForm from '../components/forms/LoginForm.jsx'
 
@@ -20,3 +20,4 @@ export default function LoginPage() {
     </div>
   )
 }
+

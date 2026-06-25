@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+﻿import { useState, useEffect } from 'react'
 import { getProductos } from '../services/svc_creditos.js'
 
 /**
@@ -64,3 +64,4 @@ export function useProductos() {
 }
 
 export default useProductos
+

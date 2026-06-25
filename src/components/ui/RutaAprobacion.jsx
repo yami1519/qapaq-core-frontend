@@ -1,4 +1,4 @@
-import { Check } from 'lucide-react'
+﻿import { Check } from 'lucide-react'
 
 const PASO_LABEL = {
   opinion_admin: 'Opinión Administrador',
@@ -54,3 +54,4 @@ export default function RutaAprobacion({ ruta }) {
     </div>
   )
 }
+

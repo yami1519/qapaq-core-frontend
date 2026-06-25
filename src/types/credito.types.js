@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Contratos del módulo de créditos (campos reales del backend).
  *
  * @typedef {Object} CreditoCartera  GET /creditos/cartera
@@ -35,3 +35,4 @@
  * @property {string} codestadocuota
  */
 export {}
+

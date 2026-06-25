@@ -1,11 +1,11 @@
-import axios from 'axios'
+﻿import axios from 'axios'
 
 /**
  * Instancia axios central. Todas las llamadas al backend FastAPI
  * pasan por aquí. Inyecta el JWT desde localStorage en cada request.
  */
 const api = axios.create({
-  baseURL: import.meta.env.VITE_BASE_URL || 'http://localhost:8001',
+  baseURL: import.meta.env.VITE_BASE_URL || 'https://qapaq-core-backend.onrender.com',
   headers: { 'Content-Type': 'application/json' },
 })
 
@@ -37,3 +37,4 @@ api.interceptors.response.use(
 )
 
 export default api
+

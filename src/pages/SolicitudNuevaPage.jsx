@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom'
+﻿import { useNavigate } from 'react-router-dom'
 import { useCrearSolicitud } from '../hooks/useSolicitudes.js'
 import { useAuth } from '../hooks/useAuth.js'
 import { puede } from '../utils/permisos.js'
@@ -146,3 +146,4 @@ export default function SolicitudNuevaPage() {
     </div>
   )
 }
+

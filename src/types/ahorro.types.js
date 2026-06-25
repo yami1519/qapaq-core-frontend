@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Contratos del módulo de ahorros (campos reales del backend).
  * Nota: el parámetro de período es una fecha yyyymmdd (ej. 20251231).
  *
@@ -18,3 +18,4 @@
  * @property {string} fechaaperturacuenta
  */
 export {}
+

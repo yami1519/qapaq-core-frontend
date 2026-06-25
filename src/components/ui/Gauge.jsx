@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Medidor semicircular de cumplimiento (0–100%+) con zonas de color
  * según el semáforo de metas: ≥90 verde · 70–89 ámbar · <70 rojo.
  *
@@ -34,3 +34,4 @@ export default function Gauge({ value = 0, sublabel }) {
     </div>
   )
 }
+

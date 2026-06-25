@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react'
+﻿import { useState, useEffect, useCallback } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 /**
@@ -58,3 +58,4 @@ export default function Carrusel({ slides, intervalo = 5000, fill = false }) {
     </div>
   )
 }
+

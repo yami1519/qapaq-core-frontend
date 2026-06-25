@@ -1,4 +1,4 @@
-import { LogOut } from 'lucide-react'
+﻿import { LogOut } from 'lucide-react'
 import { useAuth } from '../../hooks/useAuth.js'
 import Logo from '../ui/Logo.jsx'
 
@@ -23,3 +23,4 @@ export default function Navbar() {
     </header>
   )
 }
+

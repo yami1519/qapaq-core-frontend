@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { evaluarScoring } from '../services/svc_scoring.js'
 
 /**
@@ -37,3 +37,4 @@ export function useScoring() {
 }
 
 export default useScoring
+

@@ -1,4 +1,4 @@
-import { useState } from 'react'
+﻿import { useState } from 'react'
 import { useCartera } from '../hooks/useCreditos.js'
 import { useAuth } from '../hooks/useAuth.js'
 import TablaCartera from '../components/ui/TablaCartera.jsx'
@@ -52,3 +52,4 @@ export default function CarteraPage() {
     </div>
   )
 }
+

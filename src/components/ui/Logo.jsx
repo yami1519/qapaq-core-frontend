@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Logo textual de Financiera Qapaq para el Core interno.
  */
 
@@ -58,3 +58,4 @@ export default function Logo({ size = 44, wordmark = true, variant = 'dark' }) {
     </span>
   )
 }
+

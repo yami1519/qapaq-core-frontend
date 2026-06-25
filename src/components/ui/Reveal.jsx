@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from 'react'
+﻿import { useRef, useEffect, useState } from 'react'
 
 /**
  * Revela su contenido con una animación (fade + slide-up) cuando entra
@@ -36,3 +36,4 @@ export default function Reveal({ children, delay = 0, className = '' }) {
     </div>
   )
 }
+

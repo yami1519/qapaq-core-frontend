@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react'
+﻿import { useState, useEffect, useCallback } from 'react'
 import {
   getCartera,
   getCreditoDetalle,
@@ -75,3 +75,4 @@ export function useCreditoDetalle(codcuentacredito) {
 }
 
 export default useCartera
+

@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from 'react-router-dom'
+﻿import { Routes, Route, Navigate } from 'react-router-dom'
 import PrivateRoute from './components/layout/PrivateRoute.jsx'
 import Navbar from './components/layout/Navbar.jsx'
 import Sidebar from './components/layout/Sidebar.jsx'
@@ -147,3 +147,4 @@ export default function App() {
     </Routes>
   )
 }
+

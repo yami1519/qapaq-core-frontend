@@ -1,4 +1,4 @@
-import api from './svc_api.js'
+﻿import api from './svc_api.js'
 
 /**
  * POST /auth/login
@@ -9,3 +9,4 @@ export async function login(credenciales) {
   const { data } = await api.post('/auth/login', credenciales)
   return data
 }
+

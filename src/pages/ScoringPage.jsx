@@ -1,4 +1,4 @@
-import { useScoring } from '../hooks/useScoring.js'
+﻿import { useScoring } from '../hooks/useScoring.js'
 import { useAuth } from '../hooks/useAuth.js'
 import ScoringForm from '../components/forms/ScoringForm.jsx'
 import ScoreGauge from '../components/ui/ScoreGauge.jsx'
@@ -112,3 +112,4 @@ export default function ScoringPage() {
     </div>
   )
 }
+

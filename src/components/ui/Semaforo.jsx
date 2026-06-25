@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Badge de semáforo VERDE / AMARILLO / ROJO.
  * Espeja la lógica de cumplimiento de metas del backend.
  */
@@ -12,3 +12,4 @@ export default function Semaforo({ estado }) {
   const cfg = MAP[estado] || { clase: 'badge--neutral', txt: estado || '—' }
   return <span className={`badge ${cfg.clase}`}>{cfg.txt}</span>
 }
+
