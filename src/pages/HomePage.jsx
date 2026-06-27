@@ -280,7 +280,7 @@ export default function HomePage() {
               <ShieldCheck size={14} strokeWidth={2.6} /> Conexión segura
             </span>
             <h2>Inicia sesión</h2>
-            <p className="split-login__sub">Acceso del personal · ingresa con tu DNI.</p>
+            <p className="split-login__sub">Acceso del personal · ingresa con tu DNI y contraseña.</p>
 
             <form onSubmit={submit}>
               <div className="lp-field">
@@ -292,7 +292,7 @@ export default function HomePage() {
                     type="text"
                     value={dni}
                     onChange={(e) => setDni(e.target.value)}
-                    placeholder="Ej. 12345678"
+                    placeholder="Ingresa tu DNI"
                     autoComplete="username"
                     required
                   />
@@ -307,7 +307,7 @@ export default function HomePage() {
                     type="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    placeholder="(en desarrollo: tu DNI)"
+                    placeholder="Ingresa tu contraseña"
                     autoComplete="current-password"
                     required
                   />

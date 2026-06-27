@@ -21,7 +21,7 @@ export default function LoginForm({ onSubmit, loading, error }) {
           type="text"
           value={numerodni}
           onChange={(e) => setNumerodni(e.target.value)}
-          placeholder="Ej. 12345678"
+          placeholder="Ingresa tu DNI"
           autoFocus
           required
         />
@@ -33,7 +33,7 @@ export default function LoginForm({ onSubmit, loading, error }) {
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          placeholder="(en desarrollo: tu DNI)"
+          placeholder="Ingresa tu contraseña"
           required
         />
       </div>
