@@ -3,10 +3,13 @@
  * Color según los umbrales de decisión del backend:
  *  ≥70 APROBADO (verde) · 50–69 OBSERVADO (ámbar) · <50 RECHAZADO (rojo)
  */
-export default function ScoreGauge({ score = 0 }) {
+import { colorSemaforo } from '../../utils/semaforo.js'
+
+export default function ScoreGauge({ score = 0, semaforo }) {
   const s = Math.max(0, Math.min(100, Number(score) || 0))
-  const color =
+  const colorPorScore =
     s >= 70 ? 'var(--c-verde)' : s >= 50 ? 'var(--c-amarillo)' : 'var(--c-rojo)'
+  const color = colorSemaforo(semaforo) || colorPorScore
 
   const size = 140
   const stroke = 12

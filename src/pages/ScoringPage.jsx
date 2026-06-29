@@ -66,7 +66,7 @@ export default function ScoringPage() {
                   flexWrap: 'wrap',
                 }}
               >
-                <ScoreGauge score={resultado.score} />
+                <ScoreGauge score={resultado.score} semaforo={semaforoResultado} />
                 <div>
                   <div style={{ marginBottom: 10 }}>
                     <Semaforo estado={semaforoResultado} />{' '}

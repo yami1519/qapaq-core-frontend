@@ -94,7 +94,10 @@ export default function SolicitudNuevaPage() {
               {/* Scoring */}
               <h4>Pre-scoring</h4>
               <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
-                <ScoreGauge score={resultado.scoring?.score} />
+                <ScoreGauge
+                  score={resultado.scoring?.score}
+                  semaforo={resultado.scoring?.semaforo || DECISION_SEMAFORO[resultado.scoring?.decision]}
+                />
                 <div>
                   <Semaforo estado={resultado.scoring?.semaforo || DECISION_SEMAFORO[resultado.scoring?.decision]} />{' '}
                   <strong>{resultado.scoring?.resultado || resultado.scoring?.decision}</strong>
