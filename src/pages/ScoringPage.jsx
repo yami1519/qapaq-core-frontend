@@ -25,6 +25,7 @@ const FACTORES = [
 export default function ScoringPage() {
   const { user } = useAuth()
   const { resultado, loading, error, evaluar } = useScoring()
+  const semaforoResultado = resultado?.semaforo || DECISION_SEMAFORO[resultado?.decision]
 
   return (
     <div>
@@ -68,14 +69,23 @@ export default function ScoringPage() {
                 <ScoreGauge score={resultado.score} />
                 <div>
                   <div style={{ marginBottom: 10 }}>
-                    <Semaforo estado={DECISION_SEMAFORO[resultado.decision]} />{' '}
-                    <strong style={{ fontSize: 18 }}>{resultado.decision}</strong>
+                    <Semaforo estado={semaforoResultado} />{' '}
+                    <strong style={{ fontSize: 18 }}>{resultado.resultado || resultado.decision}</strong>
+                  </div>
+                  <div className="page-subtitle" style={{ margin: 0 }}>
+                    Semáforo: <strong>{semaforoResultado || '—'}</strong>
                   </div>
                   <div className="page-subtitle" style={{ margin: 0 }}>
                     TEA sugerida: <strong>{pct(resultado.tea_sugerida)}</strong>
                   </div>
                   <div className="page-subtitle" style={{ margin: 0 }}>
+                    TEM calculada: <strong>{pct(resultado.tem_sugerida, 4)}</strong>
+                  </div>
+                  <div className="page-subtitle" style={{ margin: 0 }}>
                     Cuota estimada: <strong>{money(resultado.cuota_estimada)}</strong>
+                  </div>
+                  <div className="page-subtitle" style={{ margin: 0 }}>
+                    RDS: <strong>{pct(resultado.rds, 2)}</strong>
                   </div>
                 </div>
               </div>

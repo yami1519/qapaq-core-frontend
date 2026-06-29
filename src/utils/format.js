@@ -19,6 +19,7 @@ export function num(v) {
 
 /** Formatea un porcentaje (recibe el valor ya en escala 0–100). */
 export function pct(v, dec = 1) {
+  if (v === null || v === undefined || v === '') return '—'
   const n = Number(v)
   if (Number.isNaN(n)) return '—'
   return `${n.toFixed(dec)}%`

@@ -39,6 +39,14 @@ export default function RutaAprobacion({ ruta }) {
           </span>
         </li>
         <li>
+          <span>Tramo por monto</span>
+          <span><strong>{ruta.tramo_monto || '—'}</strong></span>
+        </li>
+        <li>
+          <span>Autoridad sugerida</span>
+          <span><strong>{ruta.autoridad_monto || '—'}</strong></span>
+        </li>
+        <li>
           <span>Requiere opinión Administrador</span>
           <span>{ruta.requiere_opinion_admin ? <Check size={16} color="var(--c-verde)" /> : 'No'}</span>
         </li>

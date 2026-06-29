@@ -21,8 +21,12 @@
  * @property {number} codcliente
  * @property {number} score                       0–100
  * @property {('APROBADO'|'OBSERVADO'|'RECHAZADO')} decision
+ * @property {('APROBABLE'|'OBSERVADO'|'NO APTO')} resultado
+ * @property {('VERDE'|'AMARILLO'|'ROJO')} semaforo
  * @property {number} tea_sugerida
+ * @property {number} tem_sugerida
  * @property {number} cuota_estimada
+ * @property {number|null} rds
  * @property {string[]} observaciones
  * @property {DetalleScore} detalle_score
  */

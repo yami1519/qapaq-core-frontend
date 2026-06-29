@@ -3,10 +3,10 @@ import { money } from '../../utils/format.js'
 
 // Etiquetas y formato de cada ratio del servicio RDS.
 const RATIOS = {
-  cuota_ingreso: { label: 'Cuota / Ingreso', fmt: (r) => `${r.valor_pct}%`, lim: (r) => `≤${r.apetito}% / ${r.tolerancia}%` },
-  deuda_excedente: { label: 'Deuda / Excedente', fmt: (r) => `${r.valor_veces}×`, lim: (r) => `≤${r.apetito}× / ${r.tolerancia}×` },
-  cuota_excedente: { label: 'Cuota / Excedente', fmt: (r) => `${r.valor_pct}%`, lim: (r) => `≤${r.apetito}% / ${r.tolerancia}%` },
-  n_entidades: { label: 'N.º de entidades', fmt: (r) => `${r.valor}`, lim: (r) => `≤${r.apetito} / ${r.tolerancia}` },
+  cuota_ingreso: { label: 'Cuota / Ingreso', fmt: (r) => r.valor_pct == null ? '—' : `${r.valor_pct}%`, lim: (r) => `≤${r.apetito}% / ${r.tolerancia}%` },
+  deuda_excedente: { label: 'Deuda / Excedente', fmt: (r) => r.valor_veces == null ? '—' : `${r.valor_veces}×`, lim: (r) => `≤${r.apetito}× / ${r.tolerancia}×` },
+  cuota_excedente: { label: 'Cuota / Excedente', fmt: (r) => r.valor_pct == null ? '—' : `${r.valor_pct}%`, lim: (r) => `≤${r.apetito}% / ${r.tolerancia}%` },
+  n_entidades: { label: 'N.º de entidades', fmt: (r) => r.valor == null ? '—' : `${r.valor}`, lim: (r) => `≤${r.apetito} / ${r.tolerancia}` },
 }
 
 /**

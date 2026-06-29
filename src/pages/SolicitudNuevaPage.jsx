@@ -96,16 +96,32 @@ export default function SolicitudNuevaPage() {
               <div style={{ display: 'flex', alignItems: 'center', gap: 24, flexWrap: 'wrap' }}>
                 <ScoreGauge score={resultado.scoring?.score} />
                 <div>
-                  <Semaforo estado={DECISION_SEMAFORO[resultado.scoring?.decision]} />{' '}
-                  <strong>{resultado.scoring?.decision}</strong>
+                  <Semaforo estado={resultado.scoring?.semaforo || DECISION_SEMAFORO[resultado.scoring?.decision]} />{' '}
+                  <strong>{resultado.scoring?.resultado || resultado.scoring?.decision}</strong>
+                  <div className="page-subtitle" style={{ margin: '6px 0 0' }}>
+                    Semáforo: <strong>{resultado.scoring?.semaforo || '—'}</strong>
+                  </div>
                   <div className="page-subtitle" style={{ margin: '6px 0 0' }}>
                     TEA sugerida: <strong>{pct(resultado.scoring?.tea_sugerida)}</strong>
                   </div>
                   <div className="page-subtitle" style={{ margin: 0 }}>
+                    TEM calculada: <strong>{pct(resultado.scoring?.tem_sugerida, 4)}</strong>
+                  </div>
+                  <div className="page-subtitle" style={{ margin: 0 }}>
                     Cuota estimada: <strong>{money(resultado.scoring?.cuota_estimada)}</strong>
+                  </div>
+                  <div className="page-subtitle" style={{ margin: 0 }}>
+                    RDS: <strong>{pct(resultado.scoring?.rds, 2)}</strong>
                   </div>
                 </div>
               </div>
+              {resultado.scoring?.observaciones?.length > 0 && (
+                <ul>
+                  {resultado.scoring.observaciones.map((o, i) => (
+                    <li key={i}>{o}</li>
+                  ))}
+                </ul>
+              )}
 
               {/* Elegibilidad */}
               <h4>Elegibilidad</h4>
